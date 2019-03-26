@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from store_time import views
-
+from django.views.generic import TemplateView
 # from django.urls import url , include
 
 

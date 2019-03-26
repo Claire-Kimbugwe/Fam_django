@@ -18,4 +18,17 @@
     </div>
     </form>
      {{store}} has {{num|apnumber}} store{{num|pluralize}}
+
+    {% for fam in families %}
+    <h2>{{ fam.name }}</h2>
+    <p>{{ fam.description }}</p>
+    {% endfor %}
+<div class="center">
+    Now lets get only kims family
+
+    {% for fam in kim %}
+    <h2>{{ fam.name }}</h2>
+    <p>{{ fam.description }}</p>
+    {% endfor %}
+</div>
 {% endblock content %}

@@ -1,0 +1,28 @@
+
+
+App creation
+1. after installations start project
+$ django-admin startproject project_name .
+2. after creating the other folders, start the actula project
+$ django-admin startapp store_time
+3. after making changes to settings, manage, urls migrate
+$ python manage.py migrate
+4. to run server
+$ python manage.py migrate
+
+
+
+
+
+
+
+Data base
+1. create super user
+$ python manage.py createsuperuser
+
+2. after creating database you need to tell Django we're creating the initial migration, so in your command line (in the same folder as manage.py), type this in:
+
+$ python manage.py makemigrations
+
+3. We've created the migration file, but we haven't applied it. Run python manage.py migrate
+$ python manage.py migrate

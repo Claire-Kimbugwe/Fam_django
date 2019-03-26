@@ -33,5 +33,7 @@ urlpatterns = [
         TemplateView.as_view(template_name = 'about.html'), name='about'),
     path('contact/',
         TemplateView.as_view(template_name='contact.html'),name='contact'),
+    path('results/',
+        TemplateView.as_view(template_name='results.html'),name='results'),
     path('admin/', admin.site.urls),
 ]
